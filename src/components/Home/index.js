@@ -34,7 +34,7 @@ class Home extends Component {
 
         let title = this.state.title;
         let description = this.state.description;
-        let picture = this.state.picture;
+        let picture = this.state.picture || '';
 
         const { currentUser } = fire.auth();
         fire.database()
@@ -58,20 +58,24 @@ class Home extends Component {
     
     componentDidMount = () => {
         this.setState({ loading: true });
-        // const { currentUser } = fire.auth();
+        
         fire.database()
             .ref('/feed/')
             .on('value', snapshot => {
                 var obj = snapshot.val();
                 var list = [];
                 var keys = [];
+
                 for (let a in obj) {
                     list.push(obj[a]);
                     keys.push(a);
                 }
-                const reversedList = list.reverse();
+
+                // We reverse the list so that the last posts appear first in the feed
+                const reversed = list.reverse(); 
+
                 this.setState({
-                    list: reversedList,
+                    list: reversed,
                     keys: keys,
                     loading: false
                 });
@@ -80,9 +84,9 @@ class Home extends Component {
 
     render() {
         const listItems = this.state.list.map((item, index) => (
-            <div className="Post">
+            <div key={index} className="Post">
                 <p className="Post_user">Posted by {item.user}</p>
-                <img className="Post_image" src={item.picture} alt="Broken link" />
+                {this.state.picture && this.state.picture !== '' ? (<img className="Post_image" src={item.picture} />) : null }
                 <div className="Post_info">
                     <p className="Post_title">{item.title}</p>
                     <p className="Post_description">{item.description}</p>
@@ -97,18 +101,22 @@ class Home extends Component {
                         <div>
                             <button onClick={this.show}>Hide</button>
                         </div>
-                        <div class="Form_create">
-                            <input value={this.state.title} onChange={this.handleChange} name="title" placeholder="Title.." required />
-                            <input value={this.state.description} onChange={this.handleChange} name="description" placeholder="Description.." required />
-                            <input value={this.state.picture} onChange={this.handleChange} name="picture" placeholder="Picture URL.." required />
+                        <div className="Form_create">
+                            <input value={this.state.title} onChange={this.handleChange} name="title" placeholder="Title.." />
+                            <input value={this.state.description} onChange={this.handleChange} name="description" placeholder="Description.." />
+                            <input value={this.state.picture} onChange={this.handleChange} name="picture" placeholder="Picture URL.." />
                             <button onClick={this.new} className="btn_submit">Submit Post</button>
                         </div>
                     </div>
                 ) : null }
 
-                {!this.state.show ? (<button onClick={this.show} className="btn_create">Create post</button>) : null}
+                {!this.state.show ? (
+                    <button onClick={this.show} className="btn_create">Create post</button>
+                ) : null }
 
-                { this.state.loading ? (<div className="preloader">Loading Home..</div>) : null}
+                { this.state.loading ? (
+                    <div className="preloader">Loading Home..</div>
+                ) : null }
 
                 <div className="cards">
                     { listItems }
