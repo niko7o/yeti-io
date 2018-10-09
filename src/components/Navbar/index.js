@@ -5,7 +5,7 @@ class Navbar extends Component {
     render() {
         return(
             <nav>
-                <p>Navbar</p>
+                <img className="Yeti" src="./images/yeti.svg" />
             </nav>
         )
     }
