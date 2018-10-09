@@ -1,13 +1,13 @@
 {
-  "main.css": "/yeti-io/static/css/main.2b8ecaaf.chunk.css",
-  "main.js": "/yeti-io/static/js/main.394e0331.chunk.js",
-  "main.js.map": "/yeti-io/static/js/main.394e0331.chunk.js.map",
+  "main.css": "/yeti-io/static/css/main.16137f45.chunk.css",
+  "main.js": "/yeti-io/static/js/main.5e9ae91f.chunk.js",
+  "main.js.map": "/yeti-io/static/js/main.5e9ae91f.chunk.js.map",
   "static/js/1.59f428ab.chunk.js": "/yeti-io/static/js/1.59f428ab.chunk.js",
   "static/js/1.59f428ab.chunk.js.map": "/yeti-io/static/js/1.59f428ab.chunk.js.map",
   "runtime~main.js": "/yeti-io/static/js/runtime~main.3021edbb.js",
   "runtime~main.js.map": "/yeti-io/static/js/runtime~main.3021edbb.js.map",
-  "static/css/main.2b8ecaaf.chunk.css.map": "/yeti-io/static/css/main.2b8ecaaf.chunk.css.map",
+  "static/css/main.16137f45.chunk.css.map": "/yeti-io/static/css/main.16137f45.chunk.css.map",
   "index.html": "/yeti-io/index.html",
-  "precache-manifest.2fceba8cf8db3cfbe2234907e36ce14b.js": "/yeti-io/precache-manifest.2fceba8cf8db3cfbe2234907e36ce14b.js",
+  "precache-manifest.12c34da459e79c8728ec556f3deb6c6a.js": "/yeti-io/precache-manifest.12c34da459e79c8728ec556f3deb6c6a.js",
   "service-worker.js": "/yeti-io/service-worker.js"
 }

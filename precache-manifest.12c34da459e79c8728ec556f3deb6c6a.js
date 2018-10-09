@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/yeti-io/static/js/runtime~main.3021edbb.js"
   },
   {
-    "revision": "394e0331a2648104e498",
-    "url": "/yeti-io/static/js/main.394e0331.chunk.js"
+    "revision": "5e9ae91fb803ba9be5de",
+    "url": "/yeti-io/static/js/main.5e9ae91f.chunk.js"
   },
   {
     "revision": "59f428ab3e64591f6a84",
     "url": "/yeti-io/static/js/1.59f428ab.chunk.js"
   },
   {
-    "revision": "394e0331a2648104e498",
-    "url": "/yeti-io/static/css/main.2b8ecaaf.chunk.css"
+    "revision": "5e9ae91fb803ba9be5de",
+    "url": "/yeti-io/static/css/main.16137f45.chunk.css"
   },
   {
-    "revision": "73842f5ecb5683fd0ef09fc3c029477d",
+    "revision": "0c05d60d95072035a04142408a09f149",
     "url": "/yeti-io/index.html"
   }
 ];

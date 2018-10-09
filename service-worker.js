@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/yeti-io/precache-manifest.2fceba8cf8db3cfbe2234907e36ce14b.js"
+  "/yeti-io/precache-manifest.12c34da459e79c8728ec556f3deb6c6a.js"
 );
 
 workbox.clientsClaim();
