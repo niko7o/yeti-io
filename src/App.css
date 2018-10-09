@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  background-color: #f3f3f3;
+}
+
+.App_centered {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}

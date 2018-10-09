@@ -1,0 +1,40 @@
+.preloader {
+  text-align: center;
+}
+
+.error_message {
+  color: red;
+}
+
+input {
+  width: 90%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: block;
+  margin: 1em auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  font-size: 14px;
+}
+
+button {
+    font-size: 14px;
+    padding: 0.9em 1.3em;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: .35s ease;
+    background-color: aquamarine;
+    margin: 1em 0.5em;
+}
+
+button:hover {
+  background-color: #ffb6b6;
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid aquamarine;
+}
